@@ -1,0 +1,57 @@
+.sidebar-navbar {
+    padding-bottom: 70px; /* Adjust as needed */
+  }
+  
+  .sidebar {
+    position: relative; /* Set the sidebar position to relative */
+  }
+  
+  .sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .nav-item {
+    padding: 10px 0;
+  }
+  
+  .nav-link {
+    color: #fff;
+  }
+  
+  .nav-link:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logout {
+    position: absolute; /* Position the logout button absolutely within the sidebar */
+    bottom: 10px; /* Adjust the distance from the bottom as needed */
+    left: 5%; /* Position it at the center horizontally */
+    transform: translateX(-50%); /* Center it horizontally */
+  }
+  
+  .fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    
+  
+    padding: 10px;
+  }
+  
+
+ 
+  .side-header-ul{
+    width: 80%;
+  }
+  .nav-item{
+    padding-left: 1rem;
+  }
+  .nav-item:hover{
+    background-color: rgb(107, 107, 172);
+    border-radius: 5px;
+   
+  }
+
+
+  

@@ -1,0 +1,50 @@
+.diary-title {
+  animation: colorPulse 2s infinite alternate;
+}
+
+
+@keyframes colorPulse {
+  0% {
+    color: #ff9900;
+  }
+  100% {
+    color: #66ccff;
+  }
+}
+
+
+
+
+.header-nav{
+  border-bottom: 1px solid white;
+}
+.sidebar-header-left{
+  border-right: 1px solid white;
+  width: 18rem;
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the scrollbar handle on hover */
+}
+
+@media screen and (max-width: 994px) {
+  .sidebar-header-left {
+    display: none;
+  }
+}
+

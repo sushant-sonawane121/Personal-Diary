@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+:root {
+  --backgroundColor: rgb(49, 49, 49);
+  --text-color: rgb(255, 255, 255);
+}
+.wd-ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.wd-section {
+  height: 100%;
+}
+.text-area-container {
+  height: 89%;
+}
+.text-area-container .page-title {
+  width: 100%;
+  height: 2.5rem;
+  background-color: rgb(48, 48, 48);
+  outline: none;
+  color: white;
+  font-size: medium;
+  padding-left: 1%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.text-area-container textarea {
+  height: 100%;
+  width: 100%;
+  padding: 1%;
+  outline: none;
+  border: none;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  font-size: medium;
+  resize: none;
+}
+.wd-ul li {
+  padding: 1px 5px;
+}
+.wd-ul li:hover {
+  background-color: rgb(107, 107, 172);
+  border-radius: 5px;
+}
