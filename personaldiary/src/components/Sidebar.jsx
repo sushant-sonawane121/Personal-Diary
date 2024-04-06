@@ -10,6 +10,8 @@ const Sidebar = () => {
   function handleLogout() {
     localStorage.removeItem("currentUser");
     localStorage.removeItem("userDetails");
+    localStorage.removeItem("c_user_Name");
+    localStorage.removeItem("c_user_Email");
     navigate("/");
     window.location.reload();
   }

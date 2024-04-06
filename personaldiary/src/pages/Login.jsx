@@ -1,16 +1,15 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom"; // Assuming you're using React Router for navigation
 import { useNavigate } from "react-router-dom";
 const Login = () => {
   let navigate = useNavigate();
 
   const user = localStorage.getItem("currentUser");
-  useEffect(()=>{
+  useEffect(() => {
     if (user) {
       navigate("/");
     }
-  })
-  
+  });
 
   const [formData, setFormData] = useState({
     username: "",
@@ -46,10 +45,10 @@ const Login = () => {
         localStorage.setItem("currentUser", data.username);
         localStorage.setItem("c_user_Name", data.name);
         localStorage.setItem("c_user_Email", data.email);
-       
+
         navigate("/");
       }
-      
+
       // Redirect to dashboard upon successful login
       // history.push('/dashboard');  Replace '/dashboard' with the route you want to redirect to
     } catch (error) {

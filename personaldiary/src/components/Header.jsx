@@ -22,14 +22,24 @@ function Header() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to={"/"} className="nav-link text-white">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to={"/writeDairy"} className="nav-link text-white">
+                Write Dairy
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to={"/showDairy"} className="nav-link text-white">
+                Show Dairy Pages
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to={"/profile"} className="nav-link text-white">
                 Profile
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

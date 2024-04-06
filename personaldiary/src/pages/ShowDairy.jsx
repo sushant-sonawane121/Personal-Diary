@@ -29,9 +29,21 @@ const ShowDairy = () => {
     }
   };
 
+  const deletePage = async (id) => {
+    const response = await fetch(
+      `http://localhost:8000/deletePage/${user}/${id}`,
+      {
+        method: "delete",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+  };
+
   useEffect(() => {
     fetchDiary();
-  }, [user]); // Include user in the dependency array to re-fetch diary entries when user changes
+  }, [user, deletePage]); // Include user in the dependency array to re-fetch diary entries when user changes
 
   return (
     <>
@@ -59,7 +71,14 @@ const ShowDairy = () => {
                       Delete
                     </button>
                   ) : (
-                    <button className="btn btn-danger btn-block">Delete</button>
+                    <button
+                      className="btn btn-danger btn-block"
+                      onClick={() => {
+                        deletePage(entry._id);
+                      }}
+                    >
+                      Delete
+                    </button>
                   )}
                 </div>
               </div>
